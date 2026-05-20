@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="as user I can sign up in the platform for use the different services" skipped="2" tests="2" time="0.25" timestamp="2026-05-20 02:20:02"><testcase name="sign up successful"><skipped/></testcase><testcase name="sign up with empty fields - exception"><skipped/></testcase></testsuite>
