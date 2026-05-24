@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 import static co.edu.udea.certificacion.moduloSignInAndTransactions.interactions.signUp.PASSWORD;
 import static co.edu.udea.certificacion.moduloSignInAndTransactions.interactions.signUp.USERNAME;
-import static co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces.ParaBankObjects.*;
+import static co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces.SignInObjects.*;
 
 public class logIn implements Interaction {
 

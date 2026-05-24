@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import static co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces.ParaBankObjects.*;
+import static co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces.SignInObjects.*;
 
 @RequiredArgsConstructor
 public class signUp implements Interaction {

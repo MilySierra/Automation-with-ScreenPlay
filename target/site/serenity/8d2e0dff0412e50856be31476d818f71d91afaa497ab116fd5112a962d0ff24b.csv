@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"as user I can sign up in the platform for use the different services","log in successful","ERROR","2026-05-24T11:43:49.251491-05:00[America/Bogota]","0.0","0.33"
+"as user I can transfer funds between my accounts","transfer successful","ERROR","2026-05-24T11:44:02.0656317-05:00[America/Bogota]","0.0","2.91"
+"as user I can transfer funds between my accounts","transfer with empty fields - exception","ERROR","2026-05-24T11:44:22.4717859-05:00[America/Bogota]","0.0","0.35"

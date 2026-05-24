@@ -1,5 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"as user I can sign up in the platform for use the different services","sign up successful","SUCCESS","2026-05-23T17:59:44.249825-05:00[America/Bogota]","0.0","4.94"
-"as user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-23T17:59:59.4134948-05:00[America/Bogota]","0.0","0.63"
-"as user I can sign up in the platform for use the different services","sign up with empty fields - exception","SUCCESS","2026-05-23T18:00:08.9379919-05:00[America/Bogota]","0.0","0.53"
-"as user I can sign up in the platform for use the different services","log in successful","SUCCESS","2026-05-23T18:00:19.2381579-05:00[America/Bogota]","0.0","0.3"
+"as user I can sign up in the platform for use the different services","sign up successful","SUCCESS","2026-05-24T11:43:09.9359294-05:00[America/Bogota]","0.0","5.18"
+"as user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-24T11:43:27.8387487-05:00[America/Bogota]","0.0","0.39"
+"as user I can sign up in the platform for use the different services","sign up with empty fields - exception","SUCCESS","2026-05-24T11:43:37.9818343-05:00[America/Bogota]","0.0","0.64"

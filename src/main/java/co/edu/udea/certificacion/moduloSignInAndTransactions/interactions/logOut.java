@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces.ParaBankObjects.BUTTON_LOG_OUT;
+import static co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces.SignInObjects.BUTTON_LOG_OUT;
 
 public class logOut implements Interaction {
 

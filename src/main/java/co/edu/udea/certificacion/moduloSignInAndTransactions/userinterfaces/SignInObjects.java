@@ -3,7 +3,7 @@ package co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces;
 import net .serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class ParaBankObjects {
+public class SignInObjects {
     public static final Target INPUT_NAME = Target.the("FirstName").located(By.id("customer.firstName"));
     public static final Target INPUT_LASTNAME = Target.the("Lastname").located(By.id("customer.lastName"));
     public static final Target INPUT_ADDRESS = Target.the("Address").located(By.id("customer.address.street"));

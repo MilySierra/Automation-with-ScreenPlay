@@ -9,7 +9,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 
 @RequiredArgsConstructor
-public class Enter implements Task {
+public class SignInEnter implements Task {
 
     private final boolean incomplete;
     private final String type;
@@ -31,15 +31,15 @@ public class Enter implements Task {
         }
     }
 
-    public static Enter information(){
-        return Tasks.instrumented(Enter.class, false, "information");
+    public static SignInEnter information(){
+        return Tasks.instrumented(SignInEnter.class, false, "information");
     }
 
-    public static Enter informationIncomplete(){
-        return Tasks.instrumented(Enter.class, true, "information");
+    public static SignInEnter informationIncomplete(){
+        return Tasks.instrumented(SignInEnter.class, true, "information");
     }
 
-    public static Enter credentials(){
-        return Tasks.instrumented(Enter.class, false, "credentials");
+    public static SignInEnter credentials(){
+        return Tasks.instrumented(SignInEnter.class, false, "credentials");
     }
 }

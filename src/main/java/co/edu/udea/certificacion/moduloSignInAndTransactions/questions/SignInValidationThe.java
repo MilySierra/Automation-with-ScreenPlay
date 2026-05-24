@@ -5,10 +5,10 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces.ParaBankObjects.*;
+import static co.edu.udea.certificacion.moduloSignInAndTransactions.userinterfaces.SignInObjects.*;
 
 @RequiredArgsConstructor
-public class validationThe implements Question<String> {
+public class SignInValidationThe implements Question<String> {
 
     private final boolean incomplete;
     private final String type;
@@ -28,19 +28,19 @@ public class validationThe implements Question<String> {
         }
     }
 
-    public static validationThe homePage(){
-        return new validationThe(false, "register");
+    public static SignInValidationThe homePage(){
+        return new SignInValidationThe(false, "register");
     }
 
-    public static validationThe requiredField(){
-        return new validationThe(true, "register");
+    public static SignInValidationThe requiredField(){
+        return new SignInValidationThe(true, "register");
     }
 
-    public static validationThe ownPage(){
-        return new validationThe(false, "logIn");
+    public static SignInValidationThe ownPage(){
+        return new SignInValidationThe(false, "logIn");
     }
 
-    public static validationThe logInPage(){
-        return new validationThe(false, "logOut");
+    public static SignInValidationThe logInPage(){
+        return new SignInValidationThe(false, "logOut");
     }
 }

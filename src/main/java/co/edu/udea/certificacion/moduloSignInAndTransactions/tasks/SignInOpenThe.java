@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
 
 @RequiredArgsConstructor
-public class OpenThe implements Task {
+public class SignInOpenThe implements Task {
 
     private final String page;
 
@@ -26,16 +26,16 @@ public class OpenThe implements Task {
         }
     }
 
-    public static OpenThe browser(){
-        return Tasks.instrumented(OpenThe.class, "register");
+    public static SignInOpenThe browser(){
+        return Tasks.instrumented(SignInOpenThe.class, "register");
     }
 
-    public static OpenThe logInBrowser(){
-        return Tasks.instrumented(OpenThe.class, "logIn");
+    public static SignInOpenThe logInBrowser(){
+        return Tasks.instrumented(SignInOpenThe.class, "logIn");
     }
 
-    public static OpenThe homePage(){
-        return Tasks.instrumented(OpenThe.class, "home");
+    public static SignInOpenThe homePage(){
+        return Tasks.instrumented(SignInOpenThe.class, "home");
     }
 
 
