@@ -1,4 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"as user I can update my profile information for change outdated data","update profile with empty <field> field - exception","SUCCESS","2026-05-25T12:33:45.195593-05:00[America/Bogota]","0.0","0.24"
-"as user I can update my profile information for change outdated data","update profile information successful","SUCCESS","2026-05-25T13:09:37.624062-05:00[America/Bogota]","0.0","10.06"
-"as user I can update my profile information for change outdated data","update profile with empty field - exception","SUCCESS","2026-05-25T13:10:16.915732-05:00[America/Bogota]","0.0","0.32"
+"as user I want to create financial account so I can manage my money","Create a new <accountType> account successfully","SUCCESS","2026-05-25T14:04:34.820762-05:00[America/Bogota]","0.0","14.61"
+"as user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-25T14:06:13.561552-05:00[America/Bogota]","0.0","0.4"
+"as user I can update my profile information for change outdated data","update profile information successful","SUCCESS","2026-05-25T14:08:28.083839-05:00[America/Bogota]","0.0","3.58"
+"as user I can update my profile information for change outdated data","update profile with empty field - exception","SUCCESS","2026-05-25T14:08:56.272679-05:00[America/Bogota]","0.0","0.27"

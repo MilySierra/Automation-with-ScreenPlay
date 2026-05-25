@@ -16,7 +16,8 @@ public class UpdateEnter implements Task {
     public <T extends Actor> void performAs(T actor) {
         if (!incomplete) {
             actor.attemptsTo(updateInformation.user());
-        } else {
+        }
+        else {
             actor.attemptsTo(updateInformation.updateWithEmptyField());
         }
         Wait.waitSomeMills(5000);

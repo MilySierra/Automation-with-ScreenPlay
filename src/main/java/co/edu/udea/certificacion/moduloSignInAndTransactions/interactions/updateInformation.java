@@ -20,7 +20,6 @@ public class updateInformation implements Interaction {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(UPDATE_PROFILE_LINK));
         actor.attemptsTo(Clear.field(INPUT_USER_ADDRESS));
         actor.attemptsTo(Enter.theValue(NEW_ADDRESS).into(INPUT_USER_ADDRESS));
         actor.attemptsTo(Clear.field(INPUT_USER_CITY));
