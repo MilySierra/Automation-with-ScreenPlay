@@ -1,0 +1,233 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta charset="UTF-8"&gt;<br/>
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;<br/>
+  &lt;title&gt;ParaBank | Account Activity&lt;/title&gt;<br/>
+  &lt;link href="template.css" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script src="webjars/jquery/4.0.0/jquery.min.js"&gt;&lt;/script&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;<br/>
+  &lt;div id="mainPanel"&gt;<br/>
+   &lt;div id="topPanel"&gt;&lt;a href="admin.htm"&gt;&lt;img src="images/clear.gif" width="56" height="42" border="0" class="admin"&gt;&lt;/a&gt; &lt;a href="index.htm"&gt;&lt;img src="images/logo.gif" alt="ParaBank" width="136" height="31" border="0" class="logo" title="ParaBank"&gt;&lt;/a&gt;<br/>
+    &lt;p class="caption"&gt;Experience the difference&lt;/p&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div id="headerPanel" style="background: url(images/header-customer.jpg) 0 0 no-repeat;"&gt;<br/>
+    &lt;ul class="leftmenu"&gt;<br/>
+     &lt;li class="Solutions"&gt;Solutions&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="about.htm"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="services.htm"&gt;Services&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/products.jsp"&gt;Products&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/pr/contacts.jsp"&gt;Locations&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="admin.htm"&gt;Admin Page&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;ul class="button"&gt;<br/>
+     &lt;li class="home"&gt;&lt;a href="index.htm"&gt;home&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li class="aboutus"&gt;&lt;a href="about.htm"&gt;about&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li class="contact"&gt;&lt;a href="contact.htm"&gt;contact&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div id="bodyPanel"&gt;<br/>
+    &lt;div id="leftPanel"&gt;<br/>
+     &lt;p class="smallText"&gt;&lt;b&gt;Welcome&lt;/b&gt; Daniella Taborda&lt;/p&gt;<br/>
+     &lt;h2&gt;Account Services&lt;/h2&gt;<br/>
+     &lt;ul&gt;<br/>
+      &lt;li&gt;&lt;a href="openaccount.htm"&gt;Open New Account&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="overview.htm"&gt;Accounts Overview&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="transfer.htm"&gt;Transfer Funds&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="billpay.htm"&gt;Bill Pay&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="findtrans.htm"&gt;Find Transactions&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="updateprofile.htm"&gt;Update Contact Info&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="requestloan.htm"&gt;Request Loan&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="logout.htm"&gt;Log Out&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="rightPanel"&gt;<br/>
+     &lt;div&gt;<br/>
+      &lt;div id="accountDetails" style=""&gt;<br/>
+       &lt;h1 class="title"&gt;Account Details&lt;/h1&gt;<br/>
+       &lt;table&gt;<br/>
+        &lt;tbody&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td align="right"&gt;Account Number:&lt;/td&gt;<br/>
+          &lt;td id="accountId"&gt;136221&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td align="right"&gt;Account Type:&lt;/td&gt;<br/>
+          &lt;td id="accountType"&gt;SAVINGS&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td align="right"&gt;Balance:&lt;/td&gt;<br/>
+          &lt;td id="balance"&gt;$100.00&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td align="right"&gt;Available:&lt;/td&gt;<br/>
+          &lt;td id="availableBalance"&gt;$100.00&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+        &lt;/tbody&gt;<br/>
+       &lt;/table&gt;&lt;br&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div id="accountActivity" style=""&gt;<br/>
+       &lt;h1 class="title"&gt;Account Activity&lt;/h1&gt;<br/>
+       &lt;form id="activityForm"&gt;<br/>
+        &lt;table class="form_activity"&gt;<br/>
+         &lt;tbody&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right"&gt;&lt;b&gt;Activity Period:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td&gt;&lt;select id="month" name="month" class="input"&gt; &lt;option value="All"&gt;All&lt;/option&gt; &lt;option value="enero"&gt;enero&lt;/option&gt; &lt;option value="febrero"&gt;febrero&lt;/option&gt; &lt;option value="marzo"&gt;marzo&lt;/option&gt; &lt;option value="abril"&gt;abril&lt;/option&gt; &lt;option value="mayo"&gt;mayo&lt;/option&gt; &lt;option value="junio"&gt;junio&lt;/option&gt; &lt;option value="julio"&gt;julio&lt;/option&gt; &lt;option value="agosto"&gt;agosto&lt;/option&gt; &lt;option value="septiembre"&gt;septiembre&lt;/option&gt; &lt;option value="octubre"&gt;octubre&lt;/option&gt; &lt;option value="noviembre"&gt;noviembre&lt;/option&gt; &lt;option value="diciembre"&gt;diciembre&lt;/option&gt; &lt;/select&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right"&gt;&lt;b&gt;Type:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td&gt;&lt;select id="transactionType" name="transactionType" class="input"&gt; &lt;option value="All"&gt;All&lt;/option&gt; &lt;option value="Credit"&gt;Credit&lt;/option&gt; &lt;option value="Debit"&gt;Debit&lt;/option&gt; &lt;/select&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td&gt;&nbsp;&lt;/td&gt;<br/>
+           &lt;td&gt;&lt;input type="submit" class="button" value="Go"&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+         &lt;/tbody&gt;<br/>
+        &lt;/table&gt;<br/>
+       &lt;/form&gt;&lt;br&gt;<br/>
+       &lt;p id="noTransactions" style="display: none;"&gt;&lt;b&gt;No transactions found.&lt;/b&gt;&lt;/p&gt;<br/>
+       &lt;table id="transactionTable" class="gradient-style"&gt;<br/>
+        &lt;thead&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;th&gt;Date&lt;/th&gt;<br/>
+          &lt;th&gt;Transaction&lt;/th&gt;<br/>
+          &lt;th&gt;Debit (-)&lt;/th&gt;<br/>
+          &lt;th&gt;Credit (+)&lt;/th&gt;<br/>
+         &lt;/tr&gt;<br/>
+        &lt;/thead&gt;<br/>
+        &lt;tbody&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td&gt;05-24-2026&lt;/td&gt;<br/>
+          &lt;td&gt;&lt;a href="transaction.htm?id=202954"&gt;Funds Transfer Received&lt;/a&gt;&lt;/td&gt;<br/>
+          &lt;td&gt;&lt;/td&gt;<br/>
+          &lt;td&gt;$100.00&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+        &lt;/tbody&gt;<br/>
+       &lt;/table&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div id="error" style="display: none;"&gt;<br/>
+       &lt;h1 class="title"&gt;Error!&lt;/h1&gt;<br/>
+       &lt;p class="error"&gt;An internal error has occurred and has been logged.&lt;/p&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;script type="text/javascript"&gt;<br/>
+  $(document).ready(function() {<br/>
+    function fetchAccountDetails() {<br/>
+      $.ajax({<br/>
+        url: "services_proxy/bank/accounts/" + 136221,<br/>
+        timeout: 30000,<br/>
+        success: function(data) {<br/>
+          $('#accountId').text(data.id);<br/>
+          $('#accountType').text(data.type);<br/>
+          $('#balance').text(formatCurrency(data.balance));<br/>
+          $('#availableBalance').text(formatCurrency(data.balance &lt; 0 ? 0 : data.balance));<br/>
+        },<br/>
+        error: function(xhr, status, error) {<br/>
+          reportError(xhr.status &gt; 0 ? xhr.status : "timeout", xhr.responseText ? xhr.responseText : "Server timeout");<br/>
+        }<br/>
+      });<br/>
+    }<br/>
+<br/>
+    function formatDate(dateString) {<br/>
+      var date = new Date(dateString);<br/>
+      var month = date.getMonth() + 1;<br/>
+      var day = date.getDate();<br/>
+      var year = date.getFullYear();<br/>
+      var formattedDate = (month &lt; 10 ? '0' : '') + month + '-' + (day &lt; 10 ? '0' : '') + day + '-' + year;<br/>
+      return formattedDate;<br/>
+    }<br/>
+    <br/>
+    function formatCurrency(amount) {<br/>
+    	if (amount == null) {<br/>
+    		return "$0.00";<br/>
+    	}<br/>
+        amount = parseFloat(amount);<br/>
+        var isNegative = amount &lt; 0;<br/>
+        amount = Math.abs(amount);<br/>
+        var formattedAmount = amount.toFixed(2);<br/>
+        formattedAmount = (isNegative ? '-$' : '$') + formattedAmount;<br/>
+        return formattedAmount;<br/>
+    }<br/>
+<br/>
+    function fetchAccountActivity(period, type) {<br/>
+      $.ajax({<br/>
+        url: "services_proxy/bank/accounts/" + 136221 + "/transactions/month/" + period + "/type/" + type,<br/>
+        timeout: 30000,<br/>
+        success: function(data) {<br/>
+          $('#transactionTable tbody').empty();<br/>
+          if (data.length &gt; 0) {<br/>
+        	$('#transactionTable').show();<br/>
+            $('#noTransactions').hide();<br/>
+            $.each(data, function(index, transaction) {<br/>
+              $('#transactionTable tbody').append(<br/>
+                "&lt;tr&gt;" +<br/>
+                  "&lt;td&gt;" + formatDate(transaction.date) + "&lt;/td&gt;" +<br/>
+                  "&lt;td&gt;&lt;a href='transaction.htm?id=" + transaction.id + "'&gt;" + transaction.description + "&lt;/a&gt;&lt;/td&gt;" +<br/>
+                  "&lt;td&gt;" + (transaction.type == 'Debit' ? formatCurrency(transaction.amount) : '') + "&lt;/td&gt;" +<br/>
+                  "&lt;td&gt;" + (transaction.type == 'Credit' ? formatCurrency(transaction.amount) : '') + "&lt;/td&gt;" +<br/>
+                "&lt;/tr&gt;"<br/>
+              );<br/>
+            });<br/>
+          } else {<br/>
+            $('#noTransactions').show();<br/>
+            $('#transactionTable').hide();<br/>
+          }<br/>
+        },<br/>
+        error: function(xhr, status, error) {<br/>
+          reportError(xhr.status &gt; 0 ? xhr.status : "timeout", xhr.responseText ? xhr.responseText : "Server timeout");<br/>
+        }<br/>
+      });<br/>
+    }<br/>
+    <br/>
+    function reportError(status, data) {<br/>
+        $('#accountDetails').hide();<br/>
+        $('#accountActivity').hide();<br/>
+        $('#error').show().find('.error').text("Server returned " + status + ": " + data);<br/>
+        console.error("Server returned " + status + ": " + data);<br/>
+      }<br/>
+    <br/>
+    function fetchActivity() {<br/>
+   	  var period = $('#month').val();<br/>
+      var type = $('#transactionType').val();<br/>
+      fetchAccountActivity(period, type);<br/>
+    }<br/>
+<br/>
+    $('#activityForm').submit(function(event) {<br/>
+      event.preventDefault();<br/>
+      fetchActivity()<br/>
+    });<br/>
+    <br/>
+    $('#accountDetails').show();<br/>
+    $('#accountActivity').show();<br/>
+    fetchAccountDetails();<br/>
+    fetchActivity()<br/>
+  });<br/>
+  <br/>
+<br/>
+&lt;/script&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div id="footermainPanel"&gt;<br/>
+   &lt;div id="footerPanel"&gt;<br/>
+    &lt;ul&gt;<br/>
+     &lt;li&gt;&lt;a href="index.htm"&gt;Home&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="about.htm"&gt;About Us&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="services.htm"&gt;Services&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/products.jsp"&gt;Products&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/pr/contacts.jsp"&gt;Locations&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://forums.parasoft.com/"&gt;Forum&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="sitemap.htm"&gt;Site Map&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="contact.htm"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;p class="copyright"&gt;© Parasoft. All rights reserved.&lt;/p&gt;<br/>
+    &lt;ul class="visit"&gt;<br/>
+     &lt;li&gt;Visit us at:&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/" target="_blank"&gt;www.parasoft.com&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

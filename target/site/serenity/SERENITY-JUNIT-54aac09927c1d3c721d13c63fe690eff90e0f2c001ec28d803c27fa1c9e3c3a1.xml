@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="as user I can update my profile information for change outdated data" skipped="0" tests="2" time="3.86" timestamp="2026-05-25 02:08:28"><testcase name="update profile information successful"/><testcase name="update profile with empty field - exception"/></testsuite>

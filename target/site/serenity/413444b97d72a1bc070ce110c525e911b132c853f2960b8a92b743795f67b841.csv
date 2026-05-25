@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"as a user I can sign up in the platform for use the different services","sign up successful","ERROR","2026-05-25T15:42:15.2961723-05:00[America/Bogota]","0.0","2.48"
+"as a user I can make different transactions as apply for a loan or pay bills","request loan with fields empty - exception","ERROR","2026-05-25T15:42:22.4052471-05:00[America/Bogota]","0.0","2.34"
+"as a user I can transfer funds between my accounts","transfer successful","ERROR","2026-05-25T15:42:28.1453993-05:00[America/Bogota]","0.0","1.94"

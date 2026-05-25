@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"as a user I can sign up in the platform for use the different services","sign up successful","ERROR","2026-05-25T15:42:15.2961723-05:00[America/Bogota]","0.0","2.48"
+"as a user I can sign up in the platform for use the different services","log out successful","ERROR","2026-05-25T15:42:22.0151586-05:00[America/Bogota]","0.0","0.13"
+"as a user I can sign up in the platform for use the different services","log in successful","ERROR","2026-05-25T15:42:22.1544642-05:00[America/Bogota]","0.0","0.09"
+"as a user I can sign up in the platform for use the different services","sign up with empty fields - exception","ERROR","2026-05-25T15:42:22.2521942-05:00[America/Bogota]","0.0","0.11"
