@@ -1,4 +1,4 @@
-Feature: as user I can transfer funds between my accounts
+Feature: as a user I can transfer funds between my accounts
 
   @requiresAccount
   Scenario: transfer successful
@@ -6,7 +6,6 @@ Feature: as user I can transfer funds between my accounts
     When I enter the transfer information
     Then I can see a message indicating that the transfer was successful
 
-  @requiresAccount
   Scenario: transfer with empty fields - exception
     Given that I am on the transfers page
     When I enter the transfer information but leave the amount field empty

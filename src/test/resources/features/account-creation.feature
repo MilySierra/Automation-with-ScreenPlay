@@ -1,6 +1,6 @@
-Feature: as user I want to create financial account so I can manage my money
+Feature: as a user I want to create financial account so I can manage my money
 
-  @requiresLogin
+  @requiresRegisterAndLogOut
   Scenario Outline: Create a new <accountType> account successfully
     Given that I am on the open account page
     When I request the creation of a <accountType> account

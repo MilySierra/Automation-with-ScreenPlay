@@ -38,19 +38,6 @@ public class SignUpStepDefinition {
         GivenWhenThen.then(user()).should(seeThat(SignInValidationThe.homePage(), equalTo("Welcome "+USERNAME)));
     }
 
-    @Given("that I am on the home page")
-    public void thatIAmOnTheHomePage() {
-        user().attemptsTo(SignInOpenThe.homePage());
-    }
-    @When("I log out")
-    public void iLogOut() {
-        user().attemptsTo(Leave.session());
-    }
-    @Then("I can see the log-in page")
-    public void iCanSeeTheLogInPage() {
-        GivenWhenThen.then(user()).should(seeThat(SignInValidationThe.logInPage(), equalTo("Customer Login")));
-    }
-
     @When("I enter my information but leave one field empty")
     public void iEnterMyInformationButLeaveOneFieldEmpty(){
         user().attemptsTo(SignInEnter.informationIncomplete());
@@ -70,10 +57,26 @@ public class SignUpStepDefinition {
     public void iEnterMyCredentials() {
         user().attemptsTo(SignInEnter.credentials());
     }
+
+
     @Then("I can see my accounts information")
     public void iCanSeeMyAccountsInformation() {
         GivenWhenThen.then(user()).should(seeThat(SignInValidationThe.ownPage(), equalTo("Accounts Overview")));
     }
 
+    @Given("that I am on the home page")
+    public void thatIAmOnTheHomePage() {
+        user().attemptsTo(SignInOpenThe.homePage());
+    }
+
+    @When("I log out")
+    public void iLogOut() {
+        user().attemptsTo(Leave.session());
+    }
+
+    @Then("I can see the log-in page")
+    public void iCanSeeTheLogInPage() {
+        GivenWhenThen.then(user()).should(seeThat(SignInValidationThe.logInPage(), equalTo("Customer Login")));
+    }
 
 }

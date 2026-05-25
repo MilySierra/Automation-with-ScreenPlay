@@ -29,12 +29,20 @@ public class Hooks {
     @Before(value = "@requiresLogin", order = 1)
     public void logInBeforeScenario() {
         OnStage.theActorInTheSpotlight().attemptsTo(
+                SignInOpenThe.browser(),
+                SignInEnter.credentials()
+        );
+    }
+
+    @Before(value = "@requiresRegister", order = 1)
+    public void registerBeforeScenario() {
+        OnStage.theActorInTheSpotlight().attemptsTo(
                 SignInOpenThe.browser(),      
                 SignInEnter.information()
         );
     }
 
-    @Before(value = "@requiresRegistration", order = 1)
+    @Before(value = "@requiresRegisterAndLogOut", order = 1)
     public void registerAndLogOutBeforeScenario() {
         OnStage.theActorInTheSpotlight().attemptsTo(
             SignInOpenThe.browser(),    
@@ -46,14 +54,14 @@ public class Hooks {
     @Before(value = "@requiresAccount", order = 1)
     public void registerAndOpenAccountBeforeScenario() {
         OnStage.theActorInTheSpotlight().attemptsTo(
-            SignInOpenThe.browser(),         // registra
-            SignInEnter.information(),       // queda logueado
-            AccountOpenThe.browser(),        // abre página de nueva cuenta
-            AccountEnter.savings()           // abre cuenta Savings
+            SignInOpenThe.browser(),
+            SignInEnter.information(),
+            AccountOpenThe.browser(),
+            AccountEnter.savings()
         );
     }
 
-    @After
+    @After(value="@requiresRegisterAndLogOut")
     public void cleanSession() {
         try {
             OnStage.theActorInTheSpotlight().attemptsTo(
