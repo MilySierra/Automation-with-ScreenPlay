@@ -1,0 +1,230 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta charset="UTF-8"&gt;<br/>
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;<br/>
+  &lt;title&gt;ParaBank | Update Profile&lt;/title&gt;<br/>
+  &lt;link href="template.css" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script src="webjars/jquery/4.0.0/jquery.min.js"&gt;&lt;/script&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;<br/>
+  &lt;div id="mainPanel"&gt;<br/>
+   &lt;div id="topPanel"&gt;&lt;a href="admin.htm"&gt;&lt;img src="images/clear.gif" width="56" height="42" border="0" class="admin"&gt;&lt;/a&gt; &lt;a href="index.htm"&gt;&lt;img src="images/logo.gif" alt="ParaBank" width="136" height="31" border="0" class="logo" title="ParaBank"&gt;&lt;/a&gt;<br/>
+    &lt;p class="caption"&gt;Experience the difference&lt;/p&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div id="headerPanel" style="background: url(images/header-customer.jpg) 0 0 no-repeat;"&gt;<br/>
+    &lt;ul class="leftmenu"&gt;<br/>
+     &lt;li class="Solutions"&gt;Solutions&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="about.htm"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="services.htm"&gt;Services&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/products.jsp"&gt;Products&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/pr/contacts.jsp"&gt;Locations&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="admin.htm"&gt;Admin Page&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;ul class="button"&gt;<br/>
+     &lt;li class="home"&gt;&lt;a href="index.htm"&gt;home&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li class="aboutus"&gt;&lt;a href="about.htm"&gt;about&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li class="contact"&gt;&lt;a href="contact.htm"&gt;contact&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div id="bodyPanel"&gt;<br/>
+    &lt;div id="leftPanel"&gt;<br/>
+     &lt;p class="smallText"&gt;&lt;b&gt;Welcome&lt;/b&gt; Daniella Taborda&lt;/p&gt;<br/>
+     &lt;h2&gt;Account Services&lt;/h2&gt;<br/>
+     &lt;ul&gt;<br/>
+      &lt;li&gt;&lt;a href="openaccount.htm"&gt;Open New Account&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="overview.htm"&gt;Accounts Overview&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="transfer.htm"&gt;Transfer Funds&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="billpay.htm"&gt;Bill Pay&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="findtrans.htm"&gt;Find Transactions&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="updateprofile.htm"&gt;Update Contact Info&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="requestloan.htm"&gt;Request Loan&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="logout.htm"&gt;Log Out&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="rightPanel"&gt;<br/>
+     &lt;div&gt;<br/>
+      &lt;div id="updateProfileForm"&gt;<br/>
+       &lt;h1 class="title"&gt;Update Profile&lt;/h1&gt;<br/>
+       &lt;form name="contact"&gt;<br/>
+        &lt;table class="form2"&gt;<br/>
+         &lt;tbody&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right" width="30%"&gt;&lt;b&gt;First Name:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td width="20%"&gt;&lt;input id="customer.firstName" name="customer.firstName" class="input" type="text"&gt;&lt;/td&gt;<br/>
+           &lt;td width="50%"&gt;&lt;span id="firstName-error" class="error" style="display:none"&gt;First name is required.&lt;/span&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right" width="30%"&gt;&lt;b&gt;Last Name:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td width="20%"&gt;&lt;input id="customer.lastName" name="customer.lastName" class="input" type="text"&gt;&lt;/td&gt;<br/>
+           &lt;td width="50%"&gt;&lt;span id="lastName-error" class="error" style="display:none"&gt;Last name is required.&lt;/span&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right" width="30%"&gt;&lt;b&gt;Address:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td width="20%"&gt;&lt;input id="customer.address.street" name="customer.address.street" class="input" type="text"&gt;&lt;/td&gt;<br/>
+           &lt;td width="50%"&gt;&lt;span id="street-error" class="error" style="display:none"&gt;Address is required.&lt;/span&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right" width="30%"&gt;&lt;b&gt;City:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td width="20%"&gt;&lt;input id="customer.address.city" name="customer.address.city" class="input" type="text"&gt;&lt;/td&gt;<br/>
+           &lt;td width="50%"&gt;&lt;span id="city-error" class="error" style=""&gt;City is required.&lt;/span&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right" width="30%"&gt;&lt;b&gt;State:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td width="20%"&gt;&lt;input id="customer.address.state" name="customer.address.state" class="input" type="text"&gt;&lt;/td&gt;<br/>
+           &lt;td width="50%"&gt;&lt;span id="state-error" class="error" style="display:none"&gt;State is required.&lt;/span&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right" width="30%"&gt;&lt;b&gt;Zip Code:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td width="20%"&gt;&lt;input id="customer.address.zipCode" name="customer.address.zipCode" class="input" type="text"&gt;&lt;/td&gt;<br/>
+           &lt;td width="50%"&gt;&lt;span id="zipCode-error" class="error" style="display:none"&gt;Zip Code is required.&lt;/span&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td align="right" width="30%"&gt;&lt;b&gt;Phone #:&lt;/b&gt;&lt;/td&gt;<br/>
+           &lt;td width="20%"&gt;&lt;input id="customer.phoneNumber" name="customer.phoneNumber" class="input" type="text"&gt;&lt;/td&gt;<br/>
+           &lt;td width="50%"&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+          &lt;tr&gt;<br/>
+           &lt;td&gt;&nbsp;&lt;/td&gt;<br/>
+           &lt;td colspan="2"&gt;&lt;input type="button" class="button" value="Update Profile"&gt;&lt;/td&gt;<br/>
+          &lt;/tr&gt;<br/>
+         &lt;/tbody&gt;<br/>
+        &lt;/table&gt;&lt;br&gt;<br/>
+       &lt;/form&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div id="updateProfileResult" style="display:none"&gt;<br/>
+       &lt;h1 class="title"&gt;Profile Updated&lt;/h1&gt;<br/>
+       &lt;p&gt;Your updated address and phone number have been added to the system.&lt;/p&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div id="updateProfileError" style="display:none"&gt;<br/>
+       &lt;h1 class="title"&gt;Error!&lt;/h1&gt;<br/>
+       &lt;p class="error"&gt;An internal error has occurred and has been logged.&lt;/p&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;script&gt;<br/>
+	$(document).ready(function() {<br/>
+		var customer = null;<br/>
+		var showForm = function(visible) {<br/>
+			if (visible) {<br/>
+				$("#updateProfileForm").show();<br/>
+			} else {<br/>
+				$("#updateProfileForm").hide();<br/>
+			}<br/>
+		}<br/>
+		var showResult = function(visible) {<br/>
+			if (visible) {<br/>
+				$("#updateProfileResult").show();<br/>
+			} else {<br/>
+				$("#updateProfileResult").hide();<br/>
+			}<br/>
+		}<br/>
+		var showError = function() {<br/>
+			if (visible) {<br/>
+				$("#updateProfileError").show();<br/>
+			} else {<br/>
+				$("#updateProfileError").hide();<br/>
+			}<br/>
+		}<br/>
+		var showError = function(error) {<br/>
+            showForm(false);<br/>
+            showResult(false);<br/>
+            $('#updateProfileError').show();<br/>
+            var status = error.status &gt; 0 ? error.status : "timeout";<br/>
+            var data = error.data ? error.data : "Server timeout"<br/>
+            console.error("Server returned " + status + ": " + data);<br/>
+        }<br/>
+		var getCustomer = function() {<br/>
+			$.ajax({<br/>
+				url: "services_proxy/bank/customers/42071",<br/>
+				dataType: "json",<br/>
+				success: function(data) {<br/>
+					customer = data;<br/>
+					$('#customer\\.firstName').val(data.firstName);<br/>
+					$('#customer\\.lastName').val(data.lastName);<br/>
+					$('#customer\\.address\\.street').val(data.address.street);<br/>
+					$('#customer\\.address\\.city').val(data.address.city);<br/>
+					$('#customer\\.address\\.state').val(data.address.state);<br/>
+					$('#customer\\.address\\.zipCode').val(data.address.zipCode);<br/>
+					$('#customer\\.phoneNumber').val(data.phoneNumber);<br/>
+				},<br/>
+				error: function(data) {<br/>
+					showError(data);<br/>
+				}<br/>
+			})<br/>
+		}<br/>
+		var validate = function() {<br/>
+			$('#customer\\.firstName').val() ? $('#firstName-error').hide() : $('#firstName-error').show();<br/>
+			$('#customer\\.lastName').val() ? $('#lastName-error').hide() : $('#lastName-error').show();<br/>
+			$('#customer\\.address\\.street').val() ? $('#street-error').hide() : $('#street-error').show();<br/>
+			$('#customer\\.address\\.city').val() ? $('#city-error').hide() : $('#city-error').show();<br/>
+			$('#customer\\.address\\.state').val() ? $('#state-error').hide() : $('#state-error').show();<br/>
+			$('#customer\\.address\\.zipCode').val() ? $('#zipCode-error').hide() : $('#zipCode-error').show();<br/>
+			<br/>
+			//look thru validation markers to see if any are visible<br/>
+        	return $("span.error:visible").length == 0;<br/>
+		}<br/>
+		var submit = function() {<br/>
+			if (validate()) {<br/>
+				var url = "services_proxy/bank/customers/update/42071" +<br/>
+					"?firstName=" + encodeURIComponent($('#customer\\.firstName').val()) +<br/>
+					"&lastName=" + encodeURIComponent($('#customer\\.lastName').val()) +<br/>
+					"&street=" + encodeURIComponent($('#customer\\.address\\.street').val()) +<br/>
+					"&city=" + encodeURIComponent($('#customer\\.address\\.city').val()) +<br/>
+					"&state=" + encodeURIComponent($('#customer\\.address\\.state').val()) +<br/>
+					"&zipCode=" + encodeURIComponent($('#customer\\.address\\.zipCode').val()) +<br/>
+					"&phoneNumber=" + encodeURIComponent($('#customer\\.phoneNumber').val()) +<br/>
+					"&ssn=" + encodeURIComponent(customer.ssn) +<br/>
+					"&username=dani1779731693985&password=dani987!";<br/>
+				$.ajax({<br/>
+					url: url,<br/>
+					type: "POST",<br/>
+					timeout: 30000, <br/>
+					success: function(data) {<br/>
+						//Will always fail if the update succeeds because<br/>
+						//its trying to parse the response as JSON<br/>
+ 					},<br/>
+					error: function(data) {<br/>
+						// the server will return an error event if the update succeeds<br/>
+						// check status code<br/>
+						if (data.status == 200) {<br/>
+							showForm(false);<br/>
+							showResult(true);<br/>
+						} else {<br/>
+							showError(data);							<br/>
+						}<br/>
+					}<br/>
+				})<br/>
+			}<br/>
+		}<br/>
+		<br/>
+		$("input[type=button]").click(() =&gt; {<br/>
+        	submit(); <br/>
+		});<br/>
+		getCustomer();<br/>
+		showForm(true);<br/>
+	});<br/>
+&lt;/script&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div id="footermainPanel"&gt;<br/>
+   &lt;div id="footerPanel"&gt;<br/>
+    &lt;ul&gt;<br/>
+     &lt;li&gt;&lt;a href="index.htm"&gt;Home&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="about.htm"&gt;About Us&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="services.htm"&gt;Services&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/products.jsp"&gt;Products&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/pr/contacts.jsp"&gt;Locations&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://forums.parasoft.com/"&gt;Forum&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="sitemap.htm"&gt;Site Map&lt;/a&gt;|&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="contact.htm"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;p class="copyright"&gt;© Parasoft. All rights reserved.&lt;/p&gt;<br/>
+    &lt;ul class="visit"&gt;<br/>
+     &lt;li&gt;Visit us at:&lt;/li&gt;<br/>
+     &lt;li&gt;&lt;a href="http://www.parasoft.com/" target="_blank"&gt;www.parasoft.com&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
