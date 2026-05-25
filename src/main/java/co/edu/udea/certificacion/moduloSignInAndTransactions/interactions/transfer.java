@@ -19,7 +19,7 @@ public class transfer implements Interaction {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Enter.theValue(String.valueOf(AMOUNT)).into(INPUT_AMOUNT));
         actor.attemptsTo(SelectFromOptions.byIndex(0).from(INPUT_FROM_ACCOUNT));
-        actor.attemptsTo(SelectFromOptions.byIndex(0).from(INPUT_TO_ACCOUNT));
+        actor.attemptsTo(SelectFromOptions.byIndex(1).from(INPUT_TO_ACCOUNT));
         actor.attemptsTo(Click.on(BUTTON_TRANSFER));
 
     }

@@ -3,6 +3,8 @@ package co.edu.udea.certificacion.moduloSignInAndTransactions.stepdefinitions;
 import co.edu.udea.certificacion.moduloSignInAndTransactions.tasks.Leave;
 import co.edu.udea.certificacion.moduloSignInAndTransactions.tasks.SignInEnter;
 import co.edu.udea.certificacion.moduloSignInAndTransactions.tasks.SignInOpenThe;
+import co.edu.udea.certificacion.moduloSignInAndTransactions.tasks.AccountEnter;
+import co.edu.udea.certificacion.moduloSignInAndTransactions.tasks.AccountOpenThe;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import net.serenitybdd.annotations.Managed;
@@ -27,15 +29,39 @@ public class Hooks {
     @Before(value = "@requiresLogin", order = 1)
     public void logInBeforeScenario() {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                SignInOpenThe.logInBrowser(),
-                SignInEnter.credentials()
+                SignInOpenThe.browser(),      
+                SignInEnter.information()
         );
     }
 
-    @After(value = "@requiresLogin")
-    public void logOutAfterScenario() {
+    @Before(value = "@requiresRegistration", order = 1)
+    public void registerAndLogOutBeforeScenario() {
         OnStage.theActorInTheSpotlight().attemptsTo(
-            Leave.session()
+            SignInOpenThe.browser(),    
+            SignInEnter.information(),     
+            Leave.session()               
         );
     }
+
+    @Before(value = "@requiresAccount", order = 1)
+    public void registerAndOpenAccountBeforeScenario() {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+            SignInOpenThe.browser(),         // registra
+            SignInEnter.information(),       // queda logueado
+            AccountOpenThe.browser(),        // abre página de nueva cuenta
+            AccountEnter.savings()           // abre cuenta Savings
+        );
+    }
+
+    @After
+    public void cleanSession() {
+        try {
+            OnStage.theActorInTheSpotlight().attemptsTo(
+                Leave.session()
+            );
+        } catch (Exception e) {
+            // no hay sesión activa, no hace nada
+        }
+    }
+
 }

@@ -19,7 +19,7 @@ public class signUp implements Interaction {
     public static final String ZIPCODE = "329";
     public static final String PHONE = "2345678908";
     public static final String SSN = "68";
-    public static final String USERNAME = "dani" + (int)(Math.random() * 99);;
+    public static String USERNAME;
     public static final String PASSWORD = "dani987!";
     public static final String PASSWORD_VERIFICATION = "dani987!";
     public final String CITY;
@@ -27,6 +27,7 @@ public class signUp implements Interaction {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+        USERNAME = "dani" + System.currentTimeMillis();
         actor.attemptsTo(Enter.theValue(FIRSTNAME).into(INPUT_NAME));
         actor.attemptsTo(Enter.theValue(LASTNAME).into(INPUT_LASTNAME));
         actor.attemptsTo(Enter.theValue(ADDRESS).into(INPUT_ADDRESS));

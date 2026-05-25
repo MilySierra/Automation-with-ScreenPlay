@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"as user I can transfer funds between my accounts","transfer successful","SUCCESS","2026-05-24T21:08:23.647297921-05:00[America/Bogota]","0.0","1.85"
+"as user I can transfer funds between my accounts","transfer with empty fields - exception","SUCCESS","2026-05-24T21:09:00.008129244-05:00[America/Bogota]","0.0","0.22"

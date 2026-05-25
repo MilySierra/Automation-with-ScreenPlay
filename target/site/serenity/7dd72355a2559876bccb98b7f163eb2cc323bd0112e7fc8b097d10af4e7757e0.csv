@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"as user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-24T18:59:25.071754141-05:00[America/Bogota]","0.0","0.44"
-"as user I can sign up in the platform for use the different services","sign up with empty fields - exception","SUCCESS","2026-05-24T18:59:34.813246962-05:00[America/Bogota]","0.0","0.92"
-"as user I can sign up in the platform for use the different services","log in successful","SUCCESS","2026-05-24T18:59:45.806527532-05:00[America/Bogota]","0.0","0.21"
