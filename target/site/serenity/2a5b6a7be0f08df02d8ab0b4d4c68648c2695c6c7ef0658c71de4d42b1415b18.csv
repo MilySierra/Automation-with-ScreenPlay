@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"as user I can update my profile information for change outdated data","update profile with empty field - exception","SUCCESS","2026-05-25T13:10:16.915732-05:00[America/Bogota]","0.0","0.32"
