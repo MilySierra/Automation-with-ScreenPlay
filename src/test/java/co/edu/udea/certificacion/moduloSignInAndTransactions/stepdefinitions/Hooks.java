@@ -1,7 +1,9 @@
 package co.edu.udea.certificacion.moduloSignInAndTransactions.stepdefinitions;
 
+import co.edu.udea.certificacion.moduloSignInAndTransactions.tasks.Leave;
 import co.edu.udea.certificacion.moduloSignInAndTransactions.tasks.SignInEnter;
 import co.edu.udea.certificacion.moduloSignInAndTransactions.tasks.SignInOpenThe;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.Actor;
@@ -27,6 +29,13 @@ public class Hooks {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 SignInOpenThe.logInBrowser(),
                 SignInEnter.credentials()
+        );
+    }
+
+    @After(value = "@requiresLogin")
+    public void logOutAfterScenario() {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+            Leave.session()
         );
     }
 }

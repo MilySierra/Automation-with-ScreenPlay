@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="as user I can transfer funds between my accounts" skipped="0" tests="2" time="2.0" timestamp="2026-05-24 07:00:57"><testcase name="transfer successful"/><testcase name="transfer with empty fields - exception"/></testsuite>

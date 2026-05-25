@@ -1,7 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"as user I can sign up in the platform for use the different services","sign up successful","SUCCESS","2026-05-24T11:43:09.9359294-05:00[America/Bogota]","0.0","5.18"
-"as user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-24T11:43:27.8387487-05:00[America/Bogota]","0.0","0.39"
-"as user I can sign up in the platform for use the different services","sign up with empty fields - exception","SUCCESS","2026-05-24T11:43:37.9818343-05:00[America/Bogota]","0.0","0.64"
-"as user I can sign up in the platform for use the different services","log in successful","ERROR","2026-05-24T11:43:49.251491-05:00[America/Bogota]","0.0","0.33"
-"as user I can transfer funds between my accounts","transfer successful","ERROR","2026-05-24T11:44:02.0656317-05:00[America/Bogota]","0.0","2.91"
-"as user I can transfer funds between my accounts","transfer with empty fields - exception","ERROR","2026-05-24T11:44:22.4717859-05:00[America/Bogota]","0.0","0.35"

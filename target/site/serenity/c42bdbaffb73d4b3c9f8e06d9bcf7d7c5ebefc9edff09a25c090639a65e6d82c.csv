@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"as user I can sign up in the platform for use the different services","sign up successful","SUCCESS","2026-05-24T11:40:57.8520961-05:00[America/Bogota]","0.0","14.55"
+"as user I want to create financial account so I can manage my money","Create a new <accountType> account successfully","SUCCESS","2026-05-24T18:59:55.172590224-05:00[America/Bogota]","0.0","2.06"
