@@ -24,4 +24,5 @@ public class AccountValidationThe implements Question<Boolean> {
     public static AccountValidationThe confirmationMessage() {
         return new AccountValidationThe("opened");
     }
+
 }

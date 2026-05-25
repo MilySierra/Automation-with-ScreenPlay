@@ -16,9 +16,17 @@ Feature: as a user I can navigate between the different services
     When I request the creation of a Savings account
     Then I can see the confirmation of the Savings account creation
 
+    Given that I am on the account overview page
+    When I select an account number
+    Then I can see my accounts information
+
     Given that I am on the transfers page
     When I enter the transfer information
     Then I can see a message indicating that the transfer was successful
+
+    Given that I am on the request loan page
+    When I enter a 400 and a 200
+    Then I can see the loan confirmation
 
     When I log out
     Then I can see the log-in page

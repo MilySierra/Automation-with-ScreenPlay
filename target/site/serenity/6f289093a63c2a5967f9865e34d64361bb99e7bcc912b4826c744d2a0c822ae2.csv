@@ -1,6 +1,10 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 "as a user I can transfer funds between my accounts","transfer successful","SUCCESS","2026-05-24T23:45:38.9630724-05:00[America/Bogota]","0.0","2.99"
 =======
 "as user I can transfer funds between my accounts","transfer successful","SUCCESS","2026-05-25T14:07:12.228337-05:00[America/Bogota]","0.0","4.6"
 >>>>>>> da76a1b5d9b16fb29d34c33ee9cbb1c4ed736eed
+=======
+"as a user I can transfer funds between my accounts","transfer successful","SUCCESS","2026-05-25T15:53:11.626932-05:00[America/Bogota]","0.0","2.7"
+>>>>>>> Stashed changes

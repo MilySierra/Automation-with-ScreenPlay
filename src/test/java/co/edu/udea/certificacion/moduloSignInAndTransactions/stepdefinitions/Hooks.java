@@ -46,8 +46,7 @@ public class Hooks {
     public void registerAndLogOutBeforeScenario() {
         OnStage.theActorInTheSpotlight().attemptsTo(
             SignInOpenThe.browser(),    
-            SignInEnter.information(),     
-            Leave.session()               
+            SignInEnter.information()
         );
     }
 
