@@ -23,13 +23,21 @@ public class ViewStepDefinition {
     public void thatIAmOnTheAccountOverviewPage() {
         user().attemptsTo(ViewOpenThe.browser());
     }
-    @When("I select an account number")
-    public void iSelectAnAccountNumber() {
-        user().attemptsTo(SelectAn.account());
+    @When("I select the new account number")
+    public void iSelectTheNewAccountNumber() {
+        user().attemptsTo(SelectAn.newAccount());
     }
     @Then("I can see my account information")
     public void iCanSeeMyAccountInformation() {
-        GivenWhenThen.then(user()).should(seeThat(viewValidationThe.accountInformation(), containsString("Account Details")));
+        GivenWhenThen.then(user()).should(seeThat(viewValidationThe.accountInformation(),
+                containsString("Account Details")));
 
     }
+
+    @When("I select the default account number")
+    public void iSelectTheDefaultAccountNumber() {
+        user().attemptsTo(SelectAn.defaultAccount());
+
+    }
+
 }

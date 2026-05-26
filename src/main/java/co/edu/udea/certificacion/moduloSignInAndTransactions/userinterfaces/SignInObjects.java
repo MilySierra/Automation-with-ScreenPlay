@@ -22,7 +22,7 @@ public class SignInObjects {
     public static final Target INPUT_PASSWORD_LOG_IN = Target.the("Password").locatedBy("//*[@id=\'loginPanel\']/form/div[2]/input");
     public static final Target BUTTON_LOG_IN = Target.the("Button").locatedBy("//*[@id=\'loginPanel\']/form/div[3]/input");
     public static final Target BUTTON_LOG_OUT = Target.the("Button").locatedBy("//*[@id=\"leftPanel\"]/ul/li[8]/a");
-    public static final Target WELCOME_AGAIN_MESSAGE = Target.the("Button").locatedBy("//*[@id=\"showOverview\"]/h1");
+    public static final Target WELCOME_AGAIN_MESSAGE = Target.the("Button").located(By.xpath("//h1[contains(text(),'Accounts Overview')]"));
     public static final Target LOG_OUT_MESSAGE = Target.the("Button").locatedBy("//*[@id=\"leftPanel\"]/h2");
 
 ;}

@@ -13,5 +13,5 @@ public class ViewObjects {
     }
 
     public static final Target MESSAGE_ACCOUNT = Target.the("Account").locatedBy("//*[@id=\"accountDetails\"]/h1");
-
+    public static Target DEFAULT_ACCOUNT_LINK = Target.the("First account").located(By.xpath("(//a[contains(@href,'activity.htm')])[1]"));
 }

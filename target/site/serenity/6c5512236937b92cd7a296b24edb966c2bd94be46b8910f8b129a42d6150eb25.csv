@@ -1,19 +1,7 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-"as a user I can navigate between the different services","full flow","SUCCESS","2026-05-24T23:42:49.7448493-05:00[America/Bogota]","0.0","5.03"
-"as a user I can sign up in the platform for use the different services","sign up successful","SUCCESS","2026-05-24T23:44:52.9031429-05:00[America/Bogota]","0.0","2.94"
-"as a user I can transfer funds between my accounts","transfer successful","SUCCESS","2026-05-24T23:45:38.9630724-05:00[America/Bogota]","0.0","2.99"
-"as a user I can transfer funds between my accounts","transfer with empty fields - exception","SUCCESS","2026-05-24T23:46:15.7084959-05:00[America/Bogota]","0.0","1.12"
-=======
-"as user I can sign up in the platform for use the different services","sign up successful","SUCCESS","2026-05-25T14:05:53.732757-05:00[America/Bogota]","0.0","5.04"
-"as user I can transfer funds between my accounts","transfer successful","SUCCESS","2026-05-25T14:07:12.228337-05:00[America/Bogota]","0.0","4.6"
-"as user I can update my profile information for change outdated data","update profile information successful","SUCCESS","2026-05-25T14:08:28.083839-05:00[America/Bogota]","0.0","3.58"
->>>>>>> da76a1b5d9b16fb29d34c33ee9cbb1c4ed736eed
-=======
-"as a user I can navigate between the different services","full flow","ERROR","2026-05-25T15:50:27.580582-05:00[America/Bogota]","0.0","3.61"
-"as a user I can sign up in the platform for use the different services","sign up successful","SUCCESS","2026-05-25T15:52:18.351174-05:00[America/Bogota]","0.0","3.2"
-"as a user I can make different transactions as apply for a loan or pay bills","request loan with fields empty - exception","SUCCESS","2026-05-25T15:52:58.5573271-05:00[America/Bogota]","0.0","2.29"
-"as a user I can transfer funds between my accounts","transfer successful","SUCCESS","2026-05-25T15:53:11.626932-05:00[America/Bogota]","0.0","2.7"
-"as a user I can view my accounts information","View new account information","SUCCESS","2026-05-25T15:53:58.4651231-05:00[America/Bogota]","0.0","2.26"
->>>>>>> Stashed changes
+"as a user I can sign up in the platform for use the different services","sign up successful","SUCCESS","2026-05-26T00:24:38.8564289-05:00[America/Bogota]","0.0","2.13"
+"as a user I can sign up in the platform for use the different services","sign up with empty fields - exception","SUCCESS","2026-05-26T00:25:05.5294147-05:00[America/Bogota]","0.0","1.72"
+"as a user I can make different transactions as apply for a loan or pay bills","request loan with fields empty - exception","SUCCESS","2026-05-26T00:25:17.2459878-05:00[America/Bogota]","0.0","3.52"
+"as a user I can transfer funds between my accounts","transfer successful","SUCCESS","2026-05-26T00:26:14.4341197-05:00[America/Bogota]","0.0","2.82"
+"as user I can update my profile information for change outdated data","update profile information successful","SUCCESS","2026-05-26T00:27:00.0990864-05:00[America/Bogota]","0.0","2.17"
+"as a user I can view my accounts information","View new account information","SUCCESS","2026-05-26T00:27:34.349288-05:00[America/Bogota]","0.0","2.09"

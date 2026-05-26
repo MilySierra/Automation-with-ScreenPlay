@@ -1,25 +1,7 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-"as a user I want to create financial account so I can manage my money","Try to create an account without being logged in - exception","SUCCESS","2026-05-24T23:44:47.0563933-05:00[America/Bogota]","0.0","0.03"
-"as a user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-24T23:45:06.198494-05:00[America/Bogota]","0.0","0.29"
-"as a user I can sign up in the platform for use the different services","log in successful","SUCCESS","2026-05-24T23:45:12.7906043-05:00[America/Bogota]","0.0","0.37"
-"as a user I can sign up in the platform for use the different services","sign up with empty fields - exception","SUCCESS","2026-05-24T23:45:26.6698134-05:00[America/Bogota]","0.0","0.35"
-=======
-"as user I want to create financial account so I can manage my money","Try to create an account without being logged in - exception","SUCCESS","2026-05-25T14:05:45.902047-05:00[America/Bogota]","0.0","0.03"
-"as user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-25T14:06:13.561552-05:00[America/Bogota]","0.0","0.4"
-"as user I can sign up in the platform for use the different services","sign up with empty fields - exception","SUCCESS","2026-05-25T14:06:34.095536-05:00[America/Bogota]","0.0","0.22"
-"as user I can sign up in the platform for use the different services","log in successful","SUCCESS","2026-05-25T14:06:46.889511-05:00[America/Bogota]","0.0","0.3"
-"as user I can transfer funds between my accounts","transfer with empty fields - exception","SUCCESS","2026-05-25T14:07:52.411796-05:00[America/Bogota]","0.0","0.22"
-"as user I can update my profile information for change outdated data","update profile with empty field - exception","SUCCESS","2026-05-25T14:08:56.272679-05:00[America/Bogota]","0.0","0.27"
->>>>>>> da76a1b5d9b16fb29d34c33ee9cbb1c4ed736eed
-=======
-"as a user I want to create financial account so I can manage my money","Create a new <accountType> account successfully","SUCCESS","2026-05-25T15:46:58.886797-05:00[America/Bogota]","0.0","2.89"
-"as a user I want to create financial account so I can manage my money","Try to create an account without being logged in - exception","SUCCESS","2026-05-25T15:47:51.6802673-05:00[America/Bogota]","0.0","0.02"
-"as a user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-25T15:48:09.2796064-05:00[America/Bogota]","0.0","0.31"
-"as a user I can sign up in the platform for use the different services","log in successful","SUCCESS","2026-05-25T15:48:16.5482902-05:00[America/Bogota]","0.0","0.2"
-"as a user I can sign up in the platform for use the different services","sign up with empty fields - exception","SUCCESS","2026-05-25T15:48:25.6479372-05:00[America/Bogota]","0.0","0.2"
-"as a user I can make different transactions as apply for a loan or pay bills","request loan successful","SUCCESS","2026-05-25T15:53:11.0898346-05:00[America/Bogota]","0.0","0.03"
-"as a user I can transfer funds between my accounts","transfer with empty fields - exception","SUCCESS","2026-05-25T15:49:24.2911446-05:00[America/Bogota]","0.0","0.22"
-"as a user I can view my accounts information","View new account information","SUCCESS","2026-05-25T15:53:58.4651231-05:00[America/Bogota]","0.0","2.26"
->>>>>>> Stashed changes
+"as a user I want to create financial account so I can manage my money","Try to create an account without being logged in - exception","SUCCESS","2026-05-26T00:24:33.3282637-05:00[America/Bogota]","0.0","0.01"
+"as a user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-26T00:24:50.5002646-05:00[America/Bogota]","0.0","0.39"
+"as a user I can sign up in the platform for use the different services","log in successful","SUCCESS","2026-05-26T00:24:56.8783762-05:00[America/Bogota]","0.0","0.24"
+"as a user I can transfer funds between my accounts","transfer with empty fields - exception","SUCCESS","2026-05-26T00:26:49.2202201-05:00[America/Bogota]","0.0","0.2"
+"as user I can update my profile information for change outdated data","update profile with empty field - exception","SUCCESS","2026-05-26T00:27:23.0178643-05:00[America/Bogota]","0.0","0.22"
+"as a user I can view my accounts information","View default account information","SUCCESS","2026-05-26T00:28:09.2792412-05:00[America/Bogota]","0.0","0.2"

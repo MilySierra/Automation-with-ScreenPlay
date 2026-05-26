@@ -24,7 +24,6 @@ public class openAccount implements Interaction {
         actor.attemptsTo(SelectFromOptions.byVisibleText(accountType).from(ACCOUNT_TYPE_DROPDOWN));
         actor.attemptsTo(SelectFromOptions.byIndex(0).from(FROM_ACCOUNT_DROPDOWN));
         actor.attemptsTo(Click.on(OPEN_ACCOUNT_BUTTON));
-
         actor.attemptsTo(WaitUntil.the(ACCOUNT, isVisible()).forNoMoreThan(10).seconds());
         String newAccountId = Text.of(ACCOUNT).answeredBy(actor).trim();
         if (newAccountId.isEmpty()) {

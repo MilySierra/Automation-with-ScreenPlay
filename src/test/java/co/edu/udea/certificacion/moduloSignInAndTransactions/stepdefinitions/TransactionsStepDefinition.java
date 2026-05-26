@@ -12,7 +12,7 @@ import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.equalTo;
 
 public class TransactionsStepDefinition {
 
@@ -22,7 +22,7 @@ public class TransactionsStepDefinition {
 
     @Given("that I am on the request loan page")
     public void thatIAmOnTheRequestLoanPage() {
-        TransactionOpen.browser();
+        user().attemptsTo(TransactionOpen.browser());
     }
     @When("I enter the pain information but leave one field empty")
     public void iEnterThePainInformationButLeaveOneFieldEmpty() {
@@ -30,7 +30,7 @@ public class TransactionsStepDefinition {
     }
     @Then("I can see a message indicating that all fields are required")
     public void iCanSeeAMessageIndicatingThatAllFieldsAreRequired() {
-        GivenWhenThen.then(user()).should(seeThat(TransactionValidationThe.message(), containsString("Error!")));
+        GivenWhenThen.then(user()).should(seeThat(TransactionValidationThe.transactionIncomplete(), equalTo("Error!")));
     }
 
     @When("I enter a {int} and a {int}")
@@ -40,6 +40,6 @@ public class TransactionsStepDefinition {
 
     @Then("I can see the loan confirmation")
     public void iCanSeeTheLoanConfirmation() {
-
+        GivenWhenThen.then(user()).should(seeThat(TransactionValidationThe.transaction(), equalTo("Loan Request Processed")));
     }
 }

@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"as user I can sign up in the platform for use the different services","log out successful","SUCCESS","2026-05-25T14:06:13.561552-05:00[America/Bogota]","0.0","0.4"
-"as user I can update my profile information for change outdated data","update profile with empty field - exception","SUCCESS","2026-05-25T14:08:56.272679-05:00[America/Bogota]","0.0","0.27"

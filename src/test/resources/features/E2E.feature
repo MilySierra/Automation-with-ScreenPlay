@@ -12,13 +12,16 @@ Feature: as a user I can navigate between the different services
     When I enter my credentials
     Then I can see my accounts information
 
+    When I select the default account number
+    Then I can see my account information
+
     Given that I am on the open account page
     When I request the creation of a Savings account
     Then I can see the confirmation of the Savings account creation
 
     Given that I am on the account overview page
-    When I select an account number
-    Then I can see my accounts information
+    When I select the new account number
+    Then I can see my account information
 
     Given that I am on the transfers page
     When I enter the transfer information
@@ -27,6 +30,10 @@ Feature: as a user I can navigate between the different services
     Given that I am on the request loan page
     When I enter a 400 and a 200
     Then I can see the loan confirmation
+
+    Given that I am on the update profile page
+    When I enter my update information
+    Then I can see a confirmation message that my profile was updated
 
     When I log out
     Then I can see the log-in page
